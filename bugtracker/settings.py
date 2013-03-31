@@ -112,6 +112,9 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 
+    # Project's applications
+    'bugtracker.core',
+
     # Third party applications
     'debug_toolbar',
     'south',
