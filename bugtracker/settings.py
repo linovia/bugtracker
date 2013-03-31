@@ -86,6 +86,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'bugtracker.urls'
@@ -110,6 +111,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+
+    # Third party applications
+    'debug_toolbar',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -140,3 +144,11 @@ LOGGING = {
         },
     }
 }
+
+
+#
+# DEBUG TOOLBAR
+#
+
+INTERNAL_IPS = ('127.0.0.1', )
+
