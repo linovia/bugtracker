@@ -111,6 +111,7 @@ INSTALLED_APPS = (
 
     # Project's applications
     'bugtracker.core',
+    'bugtracker.theme',
 
     # Third party applications
     'debug_toolbar',
